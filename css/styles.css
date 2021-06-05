@@ -66,7 +66,8 @@ p.logo-portfolio {
   letter-spacing: 0.03em;
 }
 p.logodown {
-  margin: 0px, 0px, 20px, 0px;
+  margin-bottom: 20px;
+  margin-top: 0;
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -174,7 +175,7 @@ header > div {
   box-sizing: content-box;
   width: 200px;
   height: 50px;
-  margin: 30px;
+  margin-top: 30px;
   border: var(--Logo-blue-color);
   border-radius: 4px;
   background-color: var(--Logo-blue-color);
@@ -202,7 +203,7 @@ header > div {
 }
 .advantage h3 {
   margin-top: 0;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   color: var(--h2-text-color);
   font-style: normal;
   font-weight: bold;
@@ -297,7 +298,6 @@ header > div {
   margin-right: 30px;
 }
 .team h3 {
-  padding-top: 30px;
   margin-bottom: 10px;
   margin-top: 0px;
   color: var(--h2-text-color);
@@ -310,7 +310,6 @@ header > div {
 }
 .team p {
   box-sizing: border-box;
-  padding-bottom: 30px;
   margin-top: 0px;
   margin-bottom: 0px;
   color: var(--p-text-color);
@@ -321,12 +320,23 @@ header > div {
   text-align: center;
   letter-spacing: 0.03em;
 }
-
+.team-hero {
+padding-bottom: 30px;
+padding-top: 30px;
+}
 footer {
+  display:block;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--footer-header-background);
-  height: 252px;
+  }
+  .adr a {
+ display: block;
+    margin-top: 9px;
+
+    color: rgba(255, 255, 255, 0.6);
+   
+
 }
 address {
   font-style: normal;
@@ -334,6 +344,8 @@ address {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
+
+   
 }
 .down-page {
   flex-direction: column;
@@ -379,6 +391,9 @@ button.filter {
   border-radius: 4px;
   box-shadow: none;
   border: none;
+}
+header {
+  border: 1px solid #ECECEC;
 }
 button.filter:hover,
 button.active:focus {
@@ -426,8 +441,15 @@ p.img-p {
   margin-right: 8px;
 }
 .portfolio-section {
-  margin-top: 0px;
-  margin-bottom: 101px;
+  padding-top: 0px;
+  padding-bottom: 94px;
+}
+.portfolio-projects-list {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  
 }
 .portfolio-content {
   flex-direction: column;
