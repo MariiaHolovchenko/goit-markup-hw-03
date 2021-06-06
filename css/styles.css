@@ -423,6 +423,8 @@ p.img-p {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .no-display {
   display: none;
