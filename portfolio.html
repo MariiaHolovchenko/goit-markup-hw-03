@@ -14,7 +14,7 @@
 
 <body>
     <header>
-        <div class="container">
+        <div class="container head">
             <nav>
                 <a href="./">
                     <p class="logo-portfolio">
@@ -22,11 +22,11 @@
                     </p>
                 </a>
                  <ul class="nav-block">
-                    <li class="list"><a href="./">Студия</a></li>
-                    <li class="list">
+                    <li class="list head-menu-item"><a href="./">Студия</a></li>
+                    <li class="list head-menu-item">
                         <a class="active-link" href="./portfolio.html">Портфолио</a>
                     </li>
-                    <li class="list"><a href="">Контакты</a></li>
+                    <li class="list head-menu-item"><a href="">Контакты</a></li>
                 </ul>
             </nav>
             <ul class="ul-contacts">
@@ -40,98 +40,146 @@
         </div>
     </header>
     <main>
-        <h1 class="no-display">Портфолио</h1>
-        <section class="portfolio-section">
-        <div class="portfolio-content container">
-            <ul class="search-menu">
-                <li><button class="filter">Все</button></li>
-                <li><button class="filter">Веб-сайты</button></li>
-                <li><button class="filter">Приложения</button></li>
-                <li><button class="filter">Дизайн</button></li>
-                <li><button class="filter">Маркетинг</button></li>
-            </ul>
-        </div>
-        
+        <!--HERO PORTFOLIO-->
+        <section class="portfolio-section section">
             <div class="container">
-                <ul class="portfolio-projects">
-                    <li>
-                        <a href=""><img src="./images/portfolio1.jpg" alt="Ноутбук" />
-                        <div class="portfolio-projects-list">   
-                            <h2 class="img-head">Технокряк</h2>
-                            <p class="img-p">Веб-сайт</p>
-                            </div>
-                        </a>
+                <h1 class="visually-hidden">Навигационное меню</h1>
+                <ul class="hero-portfolio-menu-list list">
+                    <li class="hero-portfolio-menu-item">
+                        <button class="modal-btn-portfolio" type="button">Все</button>
                     </li>
-                    <li>
-                        <a href=""><img src="./images/portfolio2.jpg"
-                                alt="два баскетболиста" />
-                                <div class="portfolio-projects-list">
-                            <h2 class="img-head">Постер New Orlean vs Golden Star</h2>
-                            <p class="img-p">Дизайн</p>
-                            </div>
-                        </a>
+                    <li class="hero-portfolio-menu-item">
+                        <button class="modal-btn-portfolio" type="button">Веб-сайты</button>
                     </li>
-                    <li>
-                        <a href=""><img src="./images/portfolio3.jpg"
-                                alt="ресторан морской еды" />
-                            <div class="portfolio-projects-list">
-                            <h2 class="img-head">Ресторан Seafood</h2>
-                            <p class="img-p">Приложение</p>
-                            </div>
-                        </a>
+                    <li class="hero-portfolio-menu-item">
+                        <button class="modal-btn-portfolio" type="button">Приложения</button>
                     </li>
-                    <li>
-                        <a href=""><img src="./images/portfolio4.jpg" alt="наушники" />
-                            <div class="portfolio-projects-list">
-                            <h2 class="img-head">Проект Prime</h2>
-                            <p class="img-p">Маркетинг</p>
-                            </div>
-                        </a>
+                    <li class="hero-portfolio-menu-item">
+                        <button class="modal-btn-portfolio" type="button">Дизайн</button>
                     </li>
-                    <li>
-                        <a href=""><img src="./images/portfolio5.jpg" alt="две коробки" />
-                            <div class="portfolio-projects-list">
-                            <h2 class="img-head">Проект Boxes</h2>
-                            <p class="img-p">Приложение</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href=""><img src="./images/portfolio6.jpg"
-                                alt="монитор" />
-                                <div class="portfolio-projects-list">
-                            <h2 class="img-head">Inspiration has no Borders</h2>
-                            <p class="img-p">Веб-сайт</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href=""><img src="./images/portfolio7.jpg" alt="разкрытая книга" />
-                            <div class="portfolio-projects-list">
-                            <h2 class="img-head">Издание Limited Edition</h2>
-                            <p class="img-p">Дизайн</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href=""><img src="./images/portfolio8.jpg" alt="лэйбл" />
-                            <div class="portfolio-projects-list">
-                            <h2 class="img-head">Проект LAB</h2>
-                            <p class="img-p">Маркетинг</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href=""><img src="./images/portfolio9.jpg"
-                                alt="работа за ноутбуком" />
-                            <div class="portfolio-projects-list">
-                                <h2 class="img-head">Growing Business</h2>
-                            <p class="img-p">Приложение</p>
-                            </div>
-                        </a>
+                    <li class="hero-portfolio-menu-item">
+                        <button class="modal-btn-portfolio" type="button">Маркетинг</button>
                     </li>
                 </ul>
-            </div>
+
+        
+        <!--WORK EXAMPLES-->
+        <h2 class="visually-hidden">Примеры работ</h2>
+        <ul class="example-list list">
+            <li class="example-menu-item">
+                <a href="" class="example-menu-item-link link">
+                    <div class="example-list-img-wrapper"><img class="example-menu-img" src="./images/portfolio1.jpg"
+                            alt="Технокряк" width="370" height="294">
+        
+                    </div>
+                    <div class="border-example-menu">
+                        <h2 class="example-menu-title">Технокряк</h2>
+                        <p class="example-menu-description">Веб-сайт</p>
+                    </div>
+                </a>
+            </li>
+            <li class="example-menu-item">
+                <a href="" class="example-menu-item-link link">
+                    <div class="example-list-img-wrapper">
+                        <img class="example-menu-img" src="./images/portfolio2.jpg" alt="Постер New Orlean vs Golden Star"
+                            width="370" height="294">
+                    </div>
+                    <div class="border-example-menu">
+                        <h2 class="example-menu-title">Постер New Orlean vs Golden Star</h2>
+                        <p class="example-menu-description">Дизайн</p>
+                    </div>
+                </a>
+            </li>
+            <li class="example-menu-item">
+                <a href="" class="example-menu-item-link link">
+                    <div class="example-list-img-wrapper">
+                        <img class="example-menu-img" src="./images/portfolio3.jpg" alt="Ресторан Seafood" width="370"
+                            height="294">
+        
+                    </div>
+                    <div class="border-example-menu">
+                        <h2 class="example-menu-title">Ресторан Seafood</h2>
+                        <p class="example-menu-description">Приложение</p>
+                    </div>
+                </a>
+            </li>
+            <li class="example-menu-item">
+                <a href="" class="example-menu-item-link link">
+                    <div class="example-list-img-wrapper">
+                        <img class="example-menu-img" src="./images/portfolio4.jpg" alt="Проект Prime" width="370" height="294">
+        
+                    </div>
+                    <div class="border-example-menu">
+                        <h2 class="example-menu-title">Проект Prime</h2>
+                        <p class="example-menu-description">Маркетинг</p>
+                    </div>
+                </a>
+            </li>
+            <li class="example-menu-item">
+                <a href="" class="example-menu-item-link link">
+                    <div class="example-list-img-wrapper">
+                        <img class="example-menu-img" src="./images/portfolio5.jpg" alt="Проект Boxes" width="370" height="294">
+        
+                    </div>
+                    <div class="border-example-menu">
+                        <h2 class="example-menu-title">Проект Boxes</h2>
+                        <p class="example-menu-description">Приложение</p>
+                    </div>
+                </a>
+            </li>
+            <li class="example-menu-item">
+                <a href="" class="example-menu-item-link link">
+                    <div class="example-list-img-wrapper">
+                        <img class="example-menu-img" src="./images/portfolio6.jpg" alt="Inspiration has no Borders" width="370"
+                            height="294">
+        
+                    </div>
+                    <div class="border-example-menu">
+                        <h2 class="example-menu-title" lang="en">Inspiration has no Borders</h2>
+                        <p class="example-menu-description">Веб-сайт</p>
+                    </div>
+                </a>
+            </li>
+            <li class="example-menu-item">
+                <a href="" class="example-menu-item-link link">
+                    <div class="example-list-img-wrapper">
+                        <img class="example-menu-img" src="./images/portfolio7.jpg" alt="Издание Limited Edition" width="370"
+                            height="294">
+        
+                    </div>
+                    <div class="border-example-menu">
+                        <h2 class="example-menu-title">Издание Limited Edition</h2>
+                        <p class="example-menu-description">Дизайн</p>
+                    </div>
+                </a>
+            </li>
+            <li class="example-menu-item">
+                <a href="" class="example-menu-item-link link">
+                    <div class="example-list-img-wrapper">
+                        <img class="example-menu-img" src="./images/portfolio8.jpg" alt="Проект LAB" width="370" height="294">
+        
+                    </div>
+                    <div class="border-example-menu">
+                        <h2 class="example-menu-title">Проект LAB</h2>
+                        <p class="example-menu-description">Маркетинг</p>
+                    </div>
+                </a>
+            </li>
+            <li class="example-menu-item">
+                <a href="" class="example-menu-item-link link">
+                    <div class="example-list-img-wrapper">
+                        <img class="example-menu-img" src="./images/portfolio9.jpg" alt="Growing Business" width="370"
+                            height="294">
+        
+                    </div>
+                    <div class="border-example-menu">
+                        <h2 class="example-menu-title" lang="en">Growing Business</h2>
+                        <p class="example-menu-description">Приложение</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        </div>
         </section>
     </main>
     <footer>
